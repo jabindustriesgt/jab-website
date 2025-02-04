@@ -1,0 +1,146 @@
+@import url('/assets/fonts/fonts.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 120px 24px 160px 24px;
+    pointer-events: none;
+  }
+
+.page{
+@apply flex min-h-screen flex-col items-center;
+}
+  
+.menu_item{
+    @apply  font-league-spartan text-lg cursor-pointer p-2 rounded-md;
+}
+
+.submenu_container{
+    @apply absolute left-0 mt-2 w-40 bg-white text-black rounded shadow-md flex flex-col p-2;
+}
+
+.button_primary{
+    @apply text-center text-lg font-league-spartan font-medium rounded-lg px-4 py-2  cursor-pointer hover:opacity-90;
+}
+
+.main_padding{
+    @apply md:px-20 md:py-12 p-10;
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 1.8s ease-out;
+  }
+  
+
+/*Nav bar*/
+.nav_container{
+    @apply fixed top-0 left-0 w-full z-50 transition-colors duration-300;
+}
+
+.nav_subcontainer{
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.mobile_nav{
+    @apply md:hidden bg-white text-black min-h-screen p-4;
+}
+
+/* Banner */
+
+.banner_container{
+    @apply relative bg-cover bg-center bg-no-repeat  flex flex-col items-center justify-center text-white w-full;
+}
+    
+.banner_info{
+    @apply z-20 flex flex-col items-center gap-6 p-10 xl:px-80 md:px-20 px-10;
+}
+
+.banner_title{
+    @apply xl:text-4xl text-3xl font-medium text-center font-montserrat;
+}
+
+.banner_subtitle{
+    @apply xl:text-lg text-sm text-center italic font-montserrat;
+}
+
+.banner_bg{
+    @apply !absolute object-cover w-full h-full z-0 bg-center bg-cover;
+}
+
+.swiper-button-prev {
+    @apply absolute top-1/2 left-0 z-50 bg-white text-black rounded-full p-2 cursor-pointer;
+}
+
+.swiper-button-next {
+    @apply absolute top-1/2 right-0 z-50 bg-white text-black rounded-full p-2 cursor-pointer;
+}
+
+
+/* footer */
+
+.footer-principaltitle{
+    @apply text-sm font-montserrat font-semibold text-black uppercase;
+}
+
+.footer-subtitle{
+    @apply text-sm font-montserrat font-medium text-primary flex gap-4;
+}
+
+.footer_icon{
+    @apply text-xl text-primary/80;
+}
+
+.footer_socialicon{
+    @apply text-2xl text-primary cursor-pointer hover:text-primary/80;
+}
+
+/* Image text */
+
+.image-text_container{
+    @apply flex flex-col-reverse font-montserrat;
+}
+
+/* Icon square */
+
+.icon-square_container{
+    @apply flex flex-col items-center gap-4 flex-1 p-10 rounded-lg;
+}
+
+/* contact */
+.nav_contact{
+    @apply flex flex-col justify-start items-start flex-1;
+}
+
+.nav_icon{
+    @apply text-2xl text-primary ;
+}
+
+.nav_icon_social{
+    @apply text-white font-montserrat text-xl cursor-pointer;
+}
+
+.nav_title{
+    @apply text-sm font-montserrat font-semibold text-primary;
+}
+
+.nav_paragraph{
+    @apply text-sm font-montserrat font-light text-primary py-4;
+}
