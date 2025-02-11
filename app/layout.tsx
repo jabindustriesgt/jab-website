@@ -60,17 +60,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+      <Script 
+          async 
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16787526392"
+          strategy="afterInteractive" 
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16787526392');
+          `}
+        </Script>
+      </head>
       <body>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16787526392"></Script>
-          <Script id="google-analytics">
-            {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-
-              gtag('config', 'AW-16787526392');
-            `}
-          </Script>
         {children}
       </body>
     </html>

@@ -115,7 +115,16 @@ export default function Home() {
             </span>
           </div>
           <div className="flex-1 w-full">
-            <video className="w-full h-96 object-cover rounded-md hover:scale-105 transition-transform duration-500" 
+            <video className="w-full h-96 object-cover rounded-md hover:scale-105 transition-transform duration-500 md:flex hidden" 
+            autoPlay 
+            playsInline
+            loop 
+            muted
+            >
+              <source src="/assets/videos/inicio2.mp4" type="video/mp4"/>
+              Your browser does not support the video tag.
+            </video>
+            <video className="w-full h-96 object-cover rounded-md hover:scale-105 transition-transform duration-500 md:hidden flex" 
             autoPlay 
             playsInline
             loop 

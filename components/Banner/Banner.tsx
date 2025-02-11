@@ -14,13 +14,14 @@ interface BannerProps {
     color?: string
     main?: boolean
     imageList?: string[]
+    video?: string
 }
 
-const Banner = ({ image, title, subtitle, textButton, link, color, main, imageList }: BannerProps) => {
+const Banner = ({ image, title, subtitle, textButton, link, color, main, imageList, video }: BannerProps) => {
   return (
     <div className={`banner_container ${color} ${main ? 'h-[600px]' : 'h-[400px]'}`}>
         {
-            image || imageList  && (
+            image || imageList || video && (
                 <div className="absolute w-full h-full bg-black/60 z-10"></div>
             )
         }
@@ -41,6 +42,18 @@ const Banner = ({ image, title, subtitle, textButton, link, color, main, imageLi
         {
             imageList && (
                 <ImagesSlider imageList={imageList} />
+            )
+        }
+        {
+            video && (
+                <video
+                autoPlay 
+                playsInline
+                loop 
+                muted
+                 className="banner_bg">
+                    <source src={video} type="video/mp4" />
+                </video>
             )
         }
     </div>

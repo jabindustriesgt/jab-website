@@ -41,19 +41,13 @@ const TostadorPage = () => {
     "Sistemas ergonómicos que optimizan el flujo de trabajo, tostando un lote mientras enfrías otro.",
     "Ahorro en costos operativos gracias a un diseño eficiente y de bajo consumo."]
 
-    const images = [
-      "/assets/images/banners/banner-tostador.png",
-      "/assets/images/products/tostadoras/tostador4.png",
-      "/assets/images/products/tostadoras/tostador8.png",
-    ]
-
   return (
     <div className='page'>
       <NavBar />
       <Banner
         title="TOSTADORAS JAB"
         subtitle="La Excelencia en Cada Tueste"
-        imageList={images}
+        video='/assets/videos/inicio2.mp4'
         main
         />
       <Banner
