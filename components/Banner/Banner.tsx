@@ -21,7 +21,7 @@ const Banner = ({ image, title, subtitle, textButton, link, color, main, imageLi
   return (
     <div className={`banner_container ${color} ${main ? 'h-[600px]' : 'h-[400px]'}`}>
         {
-            image || imageList || video && (
+            (image || imageList || video) && (
                 <div className="absolute w-full h-full bg-black/60 z-10"></div>
             )
         }
