@@ -46,6 +46,8 @@ const MaduroPage = () => {
         subtitle="Cuida tus Granos desde el Origen"
         imageList={images2}
         main
+        textButton="Cotizar"
+        link={'https://b24-f1mrz5.bitrix24.site/crm_form_luiea/'}
         />
       <Banner
         title="Transforma Tus Granos con los Mejores Equipos"

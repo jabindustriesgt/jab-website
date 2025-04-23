@@ -44,6 +44,8 @@ const MolinoPage = () => {
         subtitle="Precisión y Versatilidad para Cada Necesidad"
         imageList={images}
         main
+        textButton="Cotizar"
+        link={'https://b24-f1mrz5.bitrix24.site/crm_form_qqbuj/'}
         />
       <Banner
         title="Transforme su negocio con el Molino de Café JAB"

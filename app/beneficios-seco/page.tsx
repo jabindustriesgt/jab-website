@@ -48,6 +48,8 @@ const SecoPage = () => {
         subtitle="El Paso Crucial para Obtener Granos de Calidad"
         imageList={images2}
         main
+        textButton="Cotizar"
+        link={'https://b24-f1mrz5.bitrix24.site/crm_form_dp8h3/'}
         />
       <Banner
         title="Soluciones para Beneficio Seco de Alta Calidad"

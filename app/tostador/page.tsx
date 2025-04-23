@@ -49,6 +49,8 @@ const TostadorPage = () => {
         subtitle="La Excelencia en Cada Tueste"
         video='/assets/videos/inicio2.mp4'
         main
+        textButton="Cotizar"
+        link={'https://b24-f1mrz5.bitrix24.site/crm_form_wy52y/'}
         />
       <Banner
         title="Tostadoras Diseñadas para su Éxito"

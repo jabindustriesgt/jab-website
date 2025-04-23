@@ -42,6 +42,8 @@ const TrillaPage = () => {
         subtitle="Descubre la Revolución en el Procesamiento de Café con la Trilladora JAB"
         imageList={images}
         main
+        textButton="Cotizar"
+        link={'https://b24-f1mrz5.bitrix24.site/crm_form_ubbc1/'}
         />
         <Banner
         title="¿Listo para convertir su café en oro? "
