@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jab.com.gt/
+
+# Sitemaps
+Sitemap: https://jab.com.gt/sitemap.xml
