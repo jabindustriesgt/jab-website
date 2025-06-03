@@ -37,6 +37,7 @@ const Footer = () => {
                 <div className="link link-hover footer-subtitle">
                     <FaPhoneAlt className="footer_icon"/>
                     <Link href="tel:+50254179290">54179290</Link>
+                    <Link href="tel:+50277201660">PBX:+502 7720 1660</Link>
                 </div>
             </nav>
             <nav className='md:flex-col flex-col-reverse flex gap-4 justify-start items-start '>

@@ -77,6 +77,7 @@ const ContactoPage = () => {
                 </span>
               </div>
               <a href='tel:+50254179290' className='nav_paragraph'>+502 5417 9290</a>
+              <a href="tel:+50277201660" className='nav_paragraph'>PBX:+502 7720 1660</a>
             </div>
           </div>
         </div>
